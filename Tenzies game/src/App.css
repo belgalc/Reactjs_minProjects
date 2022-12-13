@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(90deg, #1c1c1c, #0b2434);
+}
+
+main {
+  background-color: #f5f5f5;
+  border-radius: 0.75rem;
+  width: 600px;
+  height: 550px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.title {
+  font-size: 50px;
+  margin: 0;
+}
+
+.instructions {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin: -20px 43px 0 43px;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.die--box {
+  background: #ffffff;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+  width: 60px;
+  height: 60px;
+  border-radius: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.die--box:hover {
+  opacity: 0.8;
+}
+
+.die--value {
+  font-family: "karla", sans-serif;
+  color: #2b283a;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.dice--container {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 35px;
+  margin-top: -20px;
+}
+
+button {
+  border: none;
+  color: white;
+  font-family: "karla", sans-serif;
+  width: 120px;
+  height: 50px;
+  background: #5035ff;
+  box-shadow: 0px 4.5px 8.3px rgba(0, 0, 0, 0.18);
+  border-radius: 0.25rem;
+  transition: 0.3s;
+  cursor: pointer;
+  user-select: none;
+}
+button:hover {
+  opacity: 0.9;
+}
+button h3 {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+footer {
+  text-align: center;
+
+  border-top: white;
+  margin-top: -19px;
+}
+footer p {
+  color: white;
+  letter-spacing: 0.15rem;
+  font-size: 1rem;
+}
+footer p span {
+  color: #59e391;
+}
